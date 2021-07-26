@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: 
+    linear-gradient(
+        180deg, 
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%));
+}
+
+.tarjeta {
+    height: 100%;
+}
+
+.fila {
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen {
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    height: 375px;
+}
+
+.texto { 
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 40px;
+    height: 375px;
+    font-family: "Kumbh Sans";
+    font-size: 12px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.fondo {
+    transform: translate(-375px, -175px);
+}
+
+.mujer {
+    transform: translate(-80px,-670px);
+}
+
+.caja { 
+    transform: translate(-80px, -875px);
+    position: absolute;
+}
+
+.accordion-button::after {
+    background-image: url(/images/icon-arrow-down.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/images/icon-arrow-down.svg);
+}
+
+.accordion-button:not(.collapsed) {
+    color: hsl(238, 29%, 16%);
+    background-color: white;
+    font-weight: bold;
+
+}
+
+.accordion-button:focus {
+    border-color: white;
+    box-shadow: rgb(253 253 253 / 0%) 0px 0px 0px 0.25rem;
+}
+
+.pregunta:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+@media (max-width: 576px) {
+    .fila {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 45% 55%;
+    }
+
+    .texto {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .imagen { 
+        border-radius: 10px 0px 0px 10px;
+    }
+
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
